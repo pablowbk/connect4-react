@@ -4,7 +4,7 @@
 }
 
 .App-header {
-  margin: 010%;
+  margin: 10px;
   text-align: left;
 }
 
@@ -136,6 +136,10 @@ footer {
 }
 
 @media (max-width: 720px) {
+  .App-header {
+    text-align: center;
+  }
+  
   .Cell {
     height: 8vw;
     width: 8vw;
