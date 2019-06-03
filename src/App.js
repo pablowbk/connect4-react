@@ -306,17 +306,19 @@ class App extends React.Component {
           />
         </div>
 
-        {boardActive
-          ? null
-          : <h2 className="GameOver">Game Over</h2>
-        }
+        <footer>
+          {boardActive
+            ? null
+            : <h2 className="GameOver">Game Over</h2>
+          }
 
-        <button
-          className="Reset"
-          onClick={() => this.createGrid()}
-        >
-          Reset Game
-        </button>
+          <button
+            className="Reset"
+            onClick={() => this.createGrid()}
+          >
+            Reset Game
+          </button>
+        </footer>
       </div>
     );
   }
