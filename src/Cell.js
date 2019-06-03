@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cell = ({handleClick, columnIndex, value}) => {
+const Cell = ({handleClick, columnIndex, value, isTurn}) => {
   let slot = "empty";
 
   if (value === 1) {
@@ -10,7 +10,10 @@ const Cell = ({handleClick, columnIndex, value}) => {
   }
 
   return (
-    <div className="Cell" onClick={() => handleClick(columnIndex)}>
+    <div
+      className="Cell"
+      onClick={() => handleClick(columnIndex)}
+    >
       <div className={[slot, "circle"].join(" ")}></div>
     </div>
   )
