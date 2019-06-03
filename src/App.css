@@ -5,7 +5,7 @@
 
 .App-header {
   margin: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 .Board-container {
@@ -137,9 +137,9 @@ footer {
 
 @media (max-width: 720px) {
   .App-header {
-    text-align: center;
+    text-align: left;
   }
-  
+
   .Cell {
     height: 8vw;
     width: 8vw;
